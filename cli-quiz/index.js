@@ -2,7 +2,7 @@ var readlineSync = require("readline-sync");
 const chalk = require('chalk');
 
 console.log(chalk.bold.magenta('Hello world!'));
-var userName = readlineSync.question("Hey fren, what's your name? \n");
+var userName = readlineSync.question("Hey friend, what's your name? \n");
 console.log(chalk("Welcome! ", userName,". "));
 
 var score = 0;
@@ -18,18 +18,22 @@ var highScore = [{
 
 ]
 
-//Question and answer
+// Questions and answers
 var qna = [
     {
-        question: "Which is my favorite cusine? ",
+        question: "Who is my favorite cousin? ",
         answer: "indian",
     },
     {
         question: "What am I studying right now?",
         answer: "engineering"
     },
+    {
+        question: "Do you like coffee?",
+        answer: "yes"
+    }
 ]
-function game(question,answer){
+function game(question, answer){
 
     var userAnswer = readlineSync.question(question);
     if(userAnswer.toUpperCase() === answer.toUpperCase()){
@@ -37,7 +41,7 @@ function game(question,answer){
         score++;
         console.log(score);
     }else{
-        console.log("Opps! Let's hang out soon.")
+        console.log("Oops! Let's hang out soon.")
         score--;
         console.log(score);
     }
