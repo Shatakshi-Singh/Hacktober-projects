@@ -17,5 +17,4 @@
 **2) Add code according to your need with proper extension**
 
 
-### Keep smiling 😄
 ### Happy coding 🥳
