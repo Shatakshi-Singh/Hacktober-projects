@@ -17,6 +17,8 @@ var highScore = [{
 }
 
 ]
+
+//Question and answer
 var qna = [
     {
         question: "Which is my favorite cusine? ",
