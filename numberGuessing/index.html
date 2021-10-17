@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Number guessing</title>
+</head>
+<body>
+    <header>
+        <h1>Number Guessing</h1>
+    </header>
+    <div class="content" id="startCont">
+        <div class="inline">
+            <h2>Put the limit of the range on wich will be picked a ramdom number 1 to </h2>
+            <input type="number" value="100" min="10">
+        </div>
+        <button id="start">Start</button>
+    </div>
+
+    <div class="content" id="cont">
+       <p id="phrase">pick a numerbetween 1 and </p> 
+       <div class="inline">
+       <p>Number: </p><input type="number" value="100" min="1"></div>
+
+       <button id="try">try</button>
+
+       <h5 id="res"></h5>
+    </div>
+    <script src="./js/app.js"></script>
+</body>
+</html>
